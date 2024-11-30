@@ -22,7 +22,7 @@ Key Features
 
 .. note::
 
-   You can reach more details in the `GitHub repository`_.
+   - You can reach more details in the `GitHub repository`_.
 
 .. _GitHub repository: https://github.com/ITSAIDI/RAGify
 
