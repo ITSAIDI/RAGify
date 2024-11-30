@@ -54,7 +54,7 @@ Notebook Overview
 Streamlit Interface
 -------------------
 
-You can build a simple pytthon interface with Streamlit library to interact with your RAG system.
+You can build a simple python interface with Streamlit library to interact with your RAG system.
 
 .. code-block:: python
 
@@ -84,19 +84,24 @@ You can build a simple pytthon interface with Streamlit library to interact with
     retrieval_chain = create_retrieval_chain(retriever,combined_docs_chain)
 
 1. **Chroma Vector Store**
+
    - `persist_directory`: Specifies the directory where ChromaDB will persist data.
    - `vector_store`: Initializes a Chroma vector database with the embedding function.
 
 2. **Embedding Model**
+
    - `OllamaEmbeddings`: A model to compute vector representations of text using the `llama3.1:8b` model hosted locally at `127.0.0.1:11434`.
 
 3. **Local Language Model (LLM)**
+
    - `llm`: Instantiates the `llama3.1:8b` model for generating text and answering queries.
 
 4. **Retriever**
+
    - `retriever`: Configures the vector store to return the top 3 (`k=3`) most relevant documents for a query.
 
 5. **Prompt and Chain**
+
    - `retrieval_qa_chat_prompt`: Fetches a pre-defined prompt template for retrieval-based Q&A tasks.
    - `combined_docs_chain`: Combines the retrieval system with the LLM for document-based answers.
    - `retrieval_chain`: Creates the full pipeline that integrates retrieval and generation.
