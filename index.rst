@@ -1,9 +1,8 @@
-.. raw:: html
-   
-   <div align="center">
-      <img src="/assets/RAGIFY_Logo.png" alt="RAGify in Action" style="width:300px; height:300px;"/>
-   </div>
-
+.. figure:: /assets/RAGIFY_Logo.png
+   :width: 60%
+   :align: center
+   :alt: RAGify in Action
+   :name: RAGify in Action
 
 Welcome to RAGify's documentation!
 ==================================
