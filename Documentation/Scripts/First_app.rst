@@ -52,6 +52,69 @@ Notebook Overview
 
    <a href="https://colab.research.google.com/github/ITSAIDI/RAGify/blob/main/Notebooks/RAG_2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+Streamlit Interface
+-------------------
+
+You can build a simple pytthon interface with Streamlit library to interact with your RAG system.
+
+.. code-block:: python
+
+    from langchain_community.llms import Ollama
+    from langchain_community.embeddings import OllamaEmbeddings
+    import streamlit as st
+    from langchain.vectorstores import Chroma
+    from langchain.chains import create_retrieval_chain
+    from langchain import hub
+    from langchain.chains.combine_documents import create_stuff_documents_chain
+
+.. hint::
+
+   - You need to save your ChromaDB folder in your machine, or like i do in Github. So you don't need to create it again.
+
+.. code-block:: python
+
+    # The Chroma is On Github     https://github.com/NourTechNerd/data
+    persist_directory ="CHROMA"
+
+    embed_model = OllamaEmbeddings(model="llama3.1:8b",base_url="http://127.0.0.1:11434")
+    vector_store = Chroma(persist_directory=persist_directory,embedding_function=embed_model)
+    llm = Ollama(model="llama3.1:8b",base_url="http://127.0.0.1:11434")
+    retriever = vector_store.as_retriever(search_kwargs={"k":3})
+    retrieval_qa_chat_prompt = hub.pull("langchain-ai/retrieval-qa-chat")
+    combined_docs_chain = create_stuff_documents_chain(llm,retrieval_qa_chat_prompt)
+    retrieval_chain = create_retrieval_chain(retriever,combined_docs_chain)
+
+1. **Chroma Vector Store**
+   - `persist_directory`: Specifies the directory where ChromaDB will persist data.
+   - `vector_store`: Initializes a Chroma vector database with the embedding function.
+
+2. **Embedding Model**
+   - `OllamaEmbeddings`: A model to compute vector representations of text using the `llama3.1:8b` model hosted locally at `127.0.0.1:11434`.
+
+3. **Local Language Model (LLM)**
+   - `llm`: Instantiates the `llama3.1:8b` model for generating text and answering queries.
+
+4. **Retriever**
+   - `retriever`: Configures the vector store to return the top 3 (`k=3`) most relevant documents for a query.
+
+5. **Prompt and Chain**
+   - `retrieval_qa_chat_prompt`: Fetches a pre-defined prompt template for retrieval-based Q&A tasks.
+   - `combined_docs_chain`: Combines the retrieval system with the LLM for document-based answers.
+   - `retrieval_chain`: Creates the full pipeline that integrates retrieval and generation.
+
+.. code-block:: python
+
+    st.title("RAG Chatbot")
+    question = st.text_input("poser votre question")
+    if st.button("obtenir la reponse"):
+        if question:
+            with st.spinner("Recherche de la réponse..."):
+                response = retrieval_chain.invoke({"input":question})
+                st.write("**réponse:**")
+                st.write(response["answer"])
+        else:
+            st.write("veuillez poser une question")
+
 
 Demo Video
 ----------
