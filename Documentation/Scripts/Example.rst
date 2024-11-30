@@ -17,9 +17,9 @@ The required libraries are installed using the following commands:
 
 .. code-block:: python
 
-    !pip install -qU langchain langchain_community
-    !pip install -qU langchain_chroma
-    !pip install -qU langchain_ollama
+    pip install -qU langchain langchain_community
+    pip install -qU langchain_chroma
+    pip install -qU langchain_ollama
 
 Additionally, if running in environments like Google Colab, the notebook includes special setups for using **Ollama**.
 
