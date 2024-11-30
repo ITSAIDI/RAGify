@@ -53,4 +53,13 @@ Notebook Overview
    <a href="https://colab.research.google.com/github/ITSAIDI/RAGify/blob/main/Notebooks/RAG_2.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
+Demo Video
+----------
+Here is a video of the RAG pipeline in action:
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/SUeJpD8zP1o" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
