@@ -4,6 +4,9 @@
    :alt: RAGify in Action
    :name: RAGify in Action
 
+RAGify's Documentation
+======================
+
 .. toctree::
    :maxdepth: 4
    :caption: Table:
