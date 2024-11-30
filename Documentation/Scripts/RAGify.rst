@@ -352,14 +352,6 @@ This line initializes the embedding model using the HuggingFace `paraphrase-mult
    - Combines the retrieval step with the LLM for generating responses to user queries.
    - Displays the generated prompt and retrieves the final response.
 
-Supporting Details
-------------------
-
-- **Model Used:** `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` for embeddings.
-- **Vector Store:** ChromaDB for managing document embeddings.
-- **Arabic Prompt Template:** Custom prompt to handle Arabic text.
-
-
 RAGify Demo Video
 -----------------
 Here is a video of the RAGify pipeline in action:
