@@ -68,7 +68,7 @@ You can build a simple pytthon interface with Streamlit library to interact with
 
 .. hint::
 
-   - You need to save your ChromaDB folder in your machine, or like i do in Github. So you don't need to create it again.
+   - You need to save your ChromaDB folder in your machine, or like I did in Github. So you don't need to create it again.
 
 .. code-block:: python
 
