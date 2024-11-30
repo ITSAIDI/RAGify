@@ -51,6 +51,11 @@ It then initializes the `OllamaEmbeddings` model using the `nomic-embed-text-v1.
 
 .. _nomic-embed-text-v1.5-GGUF: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF
 
+.. image:: /Documentation/Images/Gif.gif
+   :alt: Example GIF
+   :width: 100%
+   :align: center
+
 1. **Extract_pdf_content**
    Extracts text from all pages of a PDF file.
 
@@ -362,13 +367,6 @@ Here is a video of the RAGify pipeline in action:
         <iframe src="https://www.youtube.com/embed/wLU4Zs3Q7Zk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
-
-Here is an example of a GIF:
-
-.. image:: https://i0.wp.com/www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif?fit=450%2C250&ssl=1
-   :alt: Example GIF
-   :width: 500px
-   :align: center
 
 
 
