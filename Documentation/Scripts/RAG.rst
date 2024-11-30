@@ -28,24 +28,30 @@ Building the Vector database :
    :name: RAGify in Action
 
 1. **Load**
+
    - Input various types of data, such as:
+
      - Text files
      - PDFs
      - Images
      - URLs
      - JSON files
+
    - This stage is responsible for ingesting raw data into the pipeline.
 
 2. **Split**
+
    - Break the raw data into smaller, manageable chunks.
    - Chunking ensures that the context is preserved and enhances retrieval performance in downstream tasks.
    - Overlapping or non-overlapping chunking strategies can be applied depending on the use case.
 
 3. **Embed**
+
    - Transform each chunk into high-dimensional vector representations (embeddings) using a pre-trained model.
    - Embeddings capture the semantic meaning of the content, making it easier to compare and retrieve relevant chunks.
 
 4. **Store**
+
    - Save the embeddings into a vector database such as **ChromaDB** or **FAISS**.
    - The database enables efficient similarity searches and retrievals for future queries.
 
@@ -61,33 +67,40 @@ Using the Vector database :
    :name: RAGify in Action
 
 1. **Question**:
+
    - A user inputs a natural language question into the system.
    - The question serves as the query for retrieving relevant information.
 
 2. **Retrieve**:
+
    - The system searches through the indexed documents or embeddings stored in a vector database.
    - Relevant document chunks are identified and retrieved based on semantic similarity to the question.
 
 3. **Prompt Construction**:
+
    - Retrieved document chunks are combined with the user's query to form a structured prompt.
    - This step ensures the generative model receives both the query and relevant context.
 
 4. **LLM (Large Language Model)**:
+
    - A generative language model processes the prompt.
    - The model uses the combined context and query to generate an accurate and coherent response.
 
 5. **Answer**:
+
    - The final output is a natural language answer to the user's question.
    - This answer integrates retrieved data and the generative model's reasoning capabilities.
 
 RAG vs. Traditional Language Models
 -----------------------------------
+
 Traditional language models (like GPT) are limited to the knowledge they were trained on and do not have direct access to external databases or documents. This means they may struggle to answer questions about recent events or domain-specific knowledge that was not included in their training data.
 
 In contrast, RAG models can retrieve up-to-date information and domain-specific data from external sources, making them more versatile and accurate in real-world applications. The retrieval component allows the model to access vast knowledge stores, making it capable of answering a wider variety of questions and generating more accurate and detailed content.
 
 Applications of RAG
 -------------------
+
 RAG techniques have numerous applications across various domains:
 
 - **Question Answering**: RAG is widely used in question-answering systems, where it can fetch relevant documents and generate answers to questions that might require specific external knowledge.
@@ -100,6 +113,7 @@ RAG techniques have numerous applications across various domains:
 
 RAG in RAGify
 -------------
+
 In the **RAGify** app, the **RAG** technique is implemented with the following components:
 
 1. **Retriever**:
@@ -112,6 +126,7 @@ The combination of these components allows RAGify to provide highly accurate and
 
 Advantages of RAG
 -----------------
+
 - **Enhanced Accuracy**: By using external documents, RAG can provide answers and content that are more relevant and accurate.
 - **Domain-Specific Knowledge**: RAG models can be tailored to specific domains by retrieving documents from specialized corpora.
 - **Reduced Hallucination**: RAG reduces the risk of "hallucinations" or incorrect answers, as the model generates responses based on retrieved, factual data.
