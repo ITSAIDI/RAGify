@@ -14,6 +14,7 @@ RAGify is designed for users who need a secure, privacy-preserving, and multilin
 
 Key Features
 ------------
+
 - **Multilingual Support**: Queries and responses are supported in both **English** and **Arabic**.
 - **Local LLMs**: All processing occurs on your local machine using **Ollama**, which ensures your data remains private.
 - **Efficient Document Retrieval**: Uses **ChromaDB** to store and retrieve document embeddings quickly.
