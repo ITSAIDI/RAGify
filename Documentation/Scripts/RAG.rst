@@ -18,24 +18,67 @@ RAG typically consists of two main components:
 RAG in two phases :
 ------------------
 
+Building the Vector database :
+++++++++++++++++++++++++++++++
 
+.. figure:: /Documentation/Images/Image1.png
+   :width: 100%
+   :align: center
+   :alt: RAGify in Action
+   :name: RAGify in Action
 
+1. **Load**
+   - Input various types of data, such as:
+     - Text files
+     - PDFs
+     - Images
+     - URLs
+     - JSON files
+   - This stage is responsible for ingesting raw data into the pipeline.
 
-How RAG Works
--------------
-A typical RAG workflow can be broken down into the following steps:
+2. **Split**
+   - Break the raw data into smaller, manageable chunks.
+   - Chunking ensures that the context is preserved and enhances retrieval performance in downstream tasks.
+   - Overlapping or non-overlapping chunking strategies can be applied depending on the use case.
 
-1. **Query Input**:
-   The user inputs a query, which is usually a question or task that requires some context or external information.
+3. **Embed**
+   - Transform each chunk into high-dimensional vector representations (embeddings) using a pre-trained model.
+   - Embeddings capture the semantic meaning of the content, making it easier to compare and retrieve relevant chunks.
 
-2. **Retrieving Relevant Documents**:
-   The retriever searches through a document corpus (such as PDFs, articles, or a database) and retrieves the top `k` most relevant documents based on their embeddings and similarity to the query.
+4. **Store**
+   - Save the embeddings into a vector database such as **ChromaDB** or **FAISS**.
+   - The database enables efficient similarity searches and retrievals for future queries.
 
-3. **Augmented Generation**:
-   The retrieved documents are passed to a generative model, which augments the query with the external knowledge and produces a response or output.
+This pipeline is a foundational architecture for applications requiring document interaction, such as intelligent chatbots, question-answering systems, or document summarization tools.
 
-4. **Final Output**:
-   The generator produces a response or summary based on the combination of the input query and the retrieved documents, providing a more informed and accurate output than relying solely on the model's internal knowledge.
+Using the Vector database :
++++++++++++++++++++++++++++
+
+.. figure:: /Documentation/Images/Image2.png
+   :width: 100%
+   :align: center
+   :alt: RAGify in Action
+   :name: RAGify in Action
+
+1. **Question**:
+   - A user inputs a natural language question into the system.
+   - The question serves as the query for retrieving relevant information.
+
+2. **Retrieve**:
+   - The system searches through the indexed documents or embeddings stored in a vector database.
+   - Relevant document chunks are identified and retrieved based on semantic similarity to the question.
+
+3. **Prompt Construction**:
+   - Retrieved document chunks are combined with the user's query to form a structured prompt.
+   - This step ensures the generative model receives both the query and relevant context.
+
+4. **LLM (Large Language Model)**:
+   - A generative language model processes the prompt.
+   - The model uses the combined context and query to generate an accurate and coherent response.
+
+5. **Answer**:
+   - The final output is a natural language answer to the user's question.
+   - This answer integrates retrieved data and the generative model's reasoning capabilities.
 
 RAG vs. Traditional Language Models
 -----------------------------------
