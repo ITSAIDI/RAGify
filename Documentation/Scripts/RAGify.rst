@@ -363,6 +363,12 @@ Here is a video of the RAGify pipeline in action:
     </div>
 
 
+Here is an example of a GIF:
+
+.. image:: https://i0.wp.com/www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif?fit=450%2C250&ssl=1
+   :alt: Example GIF
+   :width: 500px
+   :align: center
 
 
 
