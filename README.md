@@ -18,6 +18,32 @@
 
 ---
 
+## 📷 Screenshots  
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/Frame1.jpg" alt="RAGify Screenshot 1" style="width:600px; height:auto;"/>
+    </td>
+    <td align="center">
+      <img src="assets/Frame2.jpg" alt="RAGify Screenshot 2" style="width:600px; height:auto;"/>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/Frame3.jpg" alt="RAGify Screenshot 3" style="width:600px; height:auto;"/>
+    </td>
+    <td align="center">
+      <img src="assets/Frame4.jpg" alt="RAGify Screenshot 4" style="width:600px; height:auto;"/>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 🛠️ Installation  
 
 ### Prerequisites  
@@ -58,23 +84,8 @@ streamlit run app.py
 - **Streamlit**: Frontend interface for user interaction.  
 - **LangChain**: Framework for building RAG pipelines.  
 - **ChromaDB**: Vector database for document embeddings and retrieval.  
-- **Ollama LLMs**: Local language model server for secure and private inference.  
-
----
-
-## 📷 Screenshots  
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/Frame1.jpg" alt="RAGify Screenshot 1" style="width:600px; height:auto;"/>
-    </td>
-    <td align="center">
-      <img src="assets/Frame2.jpg" alt="RAGify Screenshot 2" style="width:600px; height:auto;"/>
-    </td>
-  </tr>
-</table>
-
+- **Ollama LLMs**: Local language model server for secure and private inference.
+  
 ---
 
 ## 🤝 Contributing  
