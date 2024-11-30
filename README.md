@@ -46,34 +46,41 @@
 
 ## 🛠️ Installation  
 
-### Prerequisites  
-- Python 3.8 or higher  
-- Streamlit  
-- Ollama server  
-- ChromaDB  
-
 ### Clone the Repository  
 ```bash  
 git clone https://github.com/ITSAIDI/RAGify.git  
-cd RAGify  
+cd RAGify
+cd Code 
 ```  
 
-### Install Dependencies  
+### Install Dependencies
+
+- Install first <a href="https://ollama.com/download">Ollama</a> server in your machine.
+- In a new **cmd** run the commands bellow to install some models :
+
+```bash  
+ollama pull hf.co/nomic-ai/nomic-embed-text-v1.5-GGUF:F32 
+ollama pull llama3.2:3b
+ollama pull llama3.1:8b
+ollama pull qwen:7b 
+```
+- Then in a new Conda env or venv install some python libraries with :
+
 ```bash  
 pip install -r requirements.txt  
 ```  
 
 ### Start the Application  
 ```bash  
-streamlit run app.py  
+streamlit run main.py  
 ```  
 
 ---
 
 ## 📝 How to Use  
 
-1. Upload a PDF file via the Streamlit interface.  
-2. Choose your query language (English or Arabic).  
+1. Upload a PDF file(s) via the Streamlit interface.  
+2. Choose your query language (Arabic or other).  
 3. Ask questions about the document.  
 4. Get precise answers powered by the RAG pipeline.  
 
