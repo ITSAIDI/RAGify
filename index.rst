@@ -1,6 +1,5 @@
 .. figure:: /assets/RAGIFY_Logo.png
    :width: 30%
-   :height: 30%
    :align: center
    :alt: RAGify in Action
    :name: RAGify in Action
