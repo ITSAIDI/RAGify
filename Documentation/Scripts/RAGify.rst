@@ -315,7 +315,7 @@ For arabic files.
            return response
 
    **Description:**
-   
+
    - Combines the retrieval step with the LLM for generating responses to user queries.
    - Displays the generated prompt and retrieves the final response.
 
@@ -325,6 +325,16 @@ Supporting Details
 - **Vector Store:** ChromaDB for managing document embeddings.
 - **Arabic Prompt Template:** Custom prompt to handle Arabic text.
 ```
+
+RAGify Demo Video
+-----------------
+Here is a video of the RAGify pipeline in action:
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/wLU4Zs3Q7Zk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 
 
