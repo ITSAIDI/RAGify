@@ -1,6 +1,11 @@
-===============================================
-RAGify: Retrieval-Augmented Generation for PDFs
-===============================================
+.. raw:: html
+   
+   <div align="center">
+      <img src="assets/RAGIFY_Logo.png" alt="RAGify in Action" style="width:300px; height:300px;"/>
+   </div>
+
+RAGify Presentation
+===================
 
 RAGify is a powerful **Retrieval-Augmented Generation (RAG)** application designed to enhance your ability to interact with and query **PDF documents**. This tool combines state-of-the-art natural language processing (NLP) techniques to allow users to ask context-aware questions about PDF files, with support for both **English/French** and **Arabic** languages.
 
@@ -19,4 +24,10 @@ Key Features
 - **Local LLMs**: All processing occurs on your local machine using **Ollama**, which ensures your data remains private.
 - **Efficient Document Retrieval**: Uses **ChromaDB** to store and retrieve document embeddings quickly.
 - **Intuitive User Interface**: Built with **Streamlit**, the app provides a simple and responsive interface for document querying.
+
+.. note::
+
+   You can reach more details in the `GitHub repository`_.
+
+.. _GitHub repository: https://github.com/ITSAIDI/RAGify
 

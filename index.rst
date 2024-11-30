@@ -6,4 +6,5 @@ Welcome to RAGify's documentation!
    :caption: Table:
    
    Documentation/Scripts/Introduction
+   Documentation/Scripts/RAG
 
