@@ -1,6 +1,6 @@
 .. raw:: html
    
-   <div align="center">
+   <div>
       <img src="assets/RAGIFY_Logo.png" alt="RAGify in Action" style="width:300px; height:300px;"/>
    </div>
 
