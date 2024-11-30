@@ -1,9 +1,3 @@
-.. raw:: html
-   
-   <div align="center">
-      <img src="assets/RAGIFY_Logo.png" alt="RAGify in Action" style="width:300px; height:300px;"/>
-   </div>
-
 RAGify Presentation
 ===================
 
