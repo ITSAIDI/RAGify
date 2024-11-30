@@ -27,18 +27,22 @@ Notebook Overview
 -----------------
 
 1. **Setting Up the Environment**:
+
    - Installing dependencies.
    - Initializing the tools for retrieval and embedding.
 
 2. **Loading the Corpus**:
+
    - The notebook uses a small text-dataset as the source of knowledge.
    - It preprocesses the corpus into chunks for embedding.
 
 3. **Building the RAG Pipeline**:
+
    - **Retrieve**: Retrieves relevant chunks using semantic search.
    - **Generate**: Combines the retrieved context with the query and sends it to the LLM.
 
 4. **Testing the System**:
+
    - Users can input queries to test how the RAG pipeline responds.
    - The outputs are evaluated for relevance and accuracy.
 
