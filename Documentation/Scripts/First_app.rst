@@ -1,5 +1,4 @@
-
-Chat with your CV and Cove letter
+🧐 Chat with your CV and Cove letter
 =================================
 
 Introduction

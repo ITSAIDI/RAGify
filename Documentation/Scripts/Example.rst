@@ -1,5 +1,5 @@
-RAG example 
-===========
+💪 RAG example 
+=================
 
 This notebook demonstrates the creation and testing of a Retrieval-Augmented Generation (RAG) system using **LangChain** and **Ollama**. Below is a detailed breakdown of its structure and purpose.
 

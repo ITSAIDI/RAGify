@@ -1,4 +1,4 @@
-RAGify Presentation
+🚀 RAGify Presentation
 ===================
 
 RAGify is a powerful **Retrieval-Augmented Generation (RAG)** application designed to enhance your ability to interact with and query **PDF documents**. This tool combines state-of-the-art natural language processing (NLP) techniques to allow users to ask context-aware questions about PDF files, with support for both **English/French** and **Arabic** languages.
