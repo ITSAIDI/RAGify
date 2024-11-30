@@ -10,4 +10,7 @@
    
    Documentation/Scripts/Introduction
    Documentation/Scripts/RAG
+   Documentation/Scripts/Example
+   Documentation/Scripts/First_app
+   Documentation/Scripts/RAGify
 
