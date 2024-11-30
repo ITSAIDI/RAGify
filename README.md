@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/RAGIFY_Logo.png" alt="RAGify in Action" align ="center" style="width:400px; height:400px;"/>
+  <img src="assets/RAGIFY_Logo.png" alt="RAGify in Action" align ="center" style="width:300px; height:300px;"/>
 </div>  
 
 # RAGify  
