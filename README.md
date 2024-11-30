@@ -67,10 +67,10 @@ streamlit run app.py
 <table>
   <tr>
     <td align="center">
-      <img src="assets/Frame1.jpg" alt="RAGify Screenshot 1" style="width:400px; height:auto;"/>
+      <img src="assets/Frame1.jpg" alt="RAGify Screenshot 1" style="width:600px; height:auto;"/>
     </td>
     <td align="center">
-      <img src="assets/Frame2.jpg" alt="RAGify Screenshot 2" style="width:400px; height:auto;"/>
+      <img src="assets/Frame2.jpg" alt="RAGify Screenshot 2" style="width:600px; height:auto;"/>
     </td>
   </tr>
 </table>
