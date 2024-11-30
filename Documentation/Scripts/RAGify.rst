@@ -31,6 +31,26 @@ utilitis.py
 
 Countain usefull functions for non-arabic files.
 
+.. code-block:: python
+
+    chromadb.api.client.SharedSystemClient.clear_system_cache()
+    # This line for avoiding some errors when using ChromaDB with Streamlit
+
+    URL = "http://localhost:11434"
+    persist_directory="CHROMA_2"
+
+
+    embed_model = OllamaEmbeddings(
+        model="hf.co/nomic-ai/nomic-embed-text-v1.5-GGUF:F32",
+        base_url=URL,
+        show_progress =True
+    )
+
+The code clears the system cache of the ChromaDB client and sets up the local server URL and persistence directory. 
+It then initializes the `OllamaEmbeddings` model using the `nomic-embed-text-v1.5-GGUF`_ model for text embeddings, with progress display enabled.
+
+.. _nomic-embed-text-v1.5-GGUF: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF
+
 1. **Extract_pdf_content**
    Extracts text from all pages of a PDF file.
 
@@ -185,6 +205,19 @@ utilitis1.py
 
 For arabic files.
 
+.. code-block:: python
+
+    chromadb.api.client.SharedSystemClient.clear_system_cache()
+    # This line for avoiding some errors when using ChromaDB with Streamlit
+
+    embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2")
+    URL = "http://localhost:11434"
+    persist_directory="CHROMA_Arabic"
+
+This line initializes the embedding model using the HuggingFace `paraphrase-multilingual-mpnet-base-v2`_ model for multilingual text embeddings, sets the local server URL, and defines the directory for storing the Chroma database.
+
+.. _paraphrase-multilingual-mpnet-base-v2: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+
 1. **Extract_pdf_content_1**
    Extracts text from all pages of an Arabic PDF file.
 
@@ -321,10 +354,11 @@ For arabic files.
 
 Supporting Details
 ------------------
+
 - **Model Used:** `sentence-transformers/paraphrase-multilingual-mpnet-base-v2` for embeddings.
 - **Vector Store:** ChromaDB for managing document embeddings.
 - **Arabic Prompt Template:** Custom prompt to handle Arabic text.
-```
+
 
 RAGify Demo Video
 -----------------
